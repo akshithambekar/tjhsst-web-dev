@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Today: <%=short%></h2>
+    <p>Temperature: <%=temp%><span>&#176;</span><%=unit%></p>
+    <p>Wind: <%=windspeed%> <%=winddir%></p>
+    <% if (precipitation === null) { %>
+        <p>Chance of rain: 0%</p>
+    <% } else { %>
+        <p>Chance of rain: <%=precipitation%>%</p>
+    <% } %>
+    <p>Dew: <%=dew%><span>&#176;</span>C</p>
+    
+    <h2>Tomorrow: <%=shortt%></h2>
+    <p>Temperature: <%=tempt%><span>&#176;</span><%=unitt%></p>
+    <p>Wind: <%=windspeedt%> <%=winddirt%></p>
+    <% if (precipitation === null) { %>
+        <p>Chance of rain: 0%</p>
+    <% } else { %>
+        <p>Chance of rain: <%=precipitation%>%</p>
+    <% } %>
+    <p>Dew: <%=dewt%><span>&#176;</span>C</p>
+</body>
+</html>

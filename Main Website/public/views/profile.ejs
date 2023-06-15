@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="<%=picture%>">
+        <% if (nickExists == "false") { %>
+            <p>Hello <%=username%>!</p>
+            <p>Ion ID: <%=id%></p>
+            <br>
+            <form action="https://user.tjhsst.edu/2024aambekar/nickname" method="GET">
+                <label>Choose your nickname: </label><input type="text" name="nickname">
+                <input type="hidden" name="id" value="<%=id%>">
+                <input type="hidden" name="username" value="<%=username%>">
+                <input type="submit">
+            </form>
+        <% } else { %>
+            <p>Hello <%=username%>! Your nickname is <%=nickname%>. Your ION id is <%=id%></p>
+        <% } %>
+        <br>
+        <br>
+        <button onclick="logout()">Log Out</button>
+    </body>
+    
+    <script>
+        function logout() {
+            window.location.href="https://user.tjhsst.edu/2024aambekar/logout"
+        }
+    </script>
+</html>

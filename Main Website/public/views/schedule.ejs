@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Schedule</title>
+</head>
+
+<body>
+    <h1>Today's Schedule</h1>
+    <h4><%=obj.results[0].date%> - <%=obj.results[0].day_type.name%></h4>
+    <% for (let i = 0; i < obj.results[0].day_type.blocks.length; i++) { %>
+        <p><%=obj.results[0].day_type.blocks[i].name%>: <%=obj.results[0].day_type.blocks[i].start%> - <%=obj.results[0].day_type.blocks[i].end%></p>
+    <% } %>
+</body>
+
+</html>
