@@ -1,1 +1,1 @@
-This is my code from the Web Application Development course that I took at TJHSST from 2022-23. Utilized many languages such as JavaScript, Express, Flask, and HTML/CSS.
+This is my code from the Web Application Development course I took at TJHSST from 2022-23. Utilized languages such as JavaScript, HTML/CSS, and Python, and used frameworks such as Express, Flask, and Node.js.
